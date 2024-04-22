@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,5 +24,6 @@ class MainActivity : AppCompatActivity() {
             val sum = num1 + num2
             result.text = sum.toString()
         }
+
     }
 }
