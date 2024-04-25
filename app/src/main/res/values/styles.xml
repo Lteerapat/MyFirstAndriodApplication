@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextViewStyle">
+        <item name="android:textSize">@dimen/small_text</item>
+    </style>
+
+    <style name="TextViewStyle.Mini">
+        <item name="android:textSize">@dimen/extra_small_text</item>
+    </style>
+</resources>
