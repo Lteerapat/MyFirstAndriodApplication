@@ -7,106 +7,12 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <RadioGroup
-        android:id="@+id/rgOperator"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mainFragment"
+        android:name="com.teerapat.myapplication.fragment.MainFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:checkedButton="@+id/rbPlus"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:id="@+id/rbPlus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:width="0dp"
-            android:text="+" />
-
-
-        <RadioButton
-            android:id="@+id/rbMinus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:width="0dp"
-            android:text="-" />
-
-        <RadioButton
-            android:id="@+id/rbMultiply"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:width="0dp"
-            android:text="*" />
-
-        <RadioButton
-            android:id="@+id/rbDivide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:width="0dp"
-            android:text="/" />
-    </RadioGroup>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/numberOneEt"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:inputType="number" />
-
-        <EditText
-            android:id="@+id/numberTwoEt"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:inputType="number" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight=".2"
-            android:text="="
-            style="@style/TextViewStyle" />
-
-        <TextView
-            android:id="@+id/resultTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=""
-            android:freezesText="true"
-            style="@style/TextViewStyle.Mini"/>
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/calculateButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/calculate" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="true"
-        android:text="I agree"
-        android:visibility="gone" />
-
-    <ProgressBar
-        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:progress="33"
-        android:visibility="gone" />
-
-    <include layout="@layout/image_android" />
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_main" />
 
 </LinearLayout>
 
